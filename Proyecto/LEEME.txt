@@ -1,0 +1,17 @@
+Grupo L - TT
+Integrantes: Tarditi Bruno, Panella Lautaro.
+
+Nombre del proyecto: "Compra Fácil" 
+Lenguaje seleccionado: Python 3
+Entorno de trabajo: Pycharm IDE
+Descripción: Este proyecto se basa en la creación de una aplicación que sería mayormente utilizada en Smartphones con sistema operativo Android, y también puede tener 
+su versión de escritorio para sistemas Windows y Linux.
+La idea principal es hacer una aplicación que permita confeccionar una lista de compras, buscando entre categorías de muchos productos pre-cargados, y la opción de 
+ingreso de productos de forma manual antes de dirigirse al lugar elegido para hacer la compra. 
+Una vez en el lugar de compras, poder ir tildando los productos que metemos al carrito, y luego escanear o ingresar de forma manual su precio, con lo cual la aplicación
+va a ir generando un gasto total estimado, y a su vez nos va a indicar cuales son los productos de la lista que aún no hemos cargado, a través de alertas que podremos 
+también omitir en caso que cambiemos de opinión sobre si llevamos un producto determinado o no.
+A la hora de terminar con la lista, sabremos cuánto se va a gastar antes de pasar por la caja de pagos, y podremos decidir si llevamos productos que realmente no son 
+de real importancia para nosotros y ajustar la compra a un presupuesto estimado. 
+Por último la aplicación confeccionará un historial de nuestras compras, para poder comparar en listas similares, cuanto se gastó de más, o menos, en el mismo lugar u 
+otro lugar.
