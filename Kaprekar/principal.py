@@ -1,3 +1,4 @@
+#Programa Constante de Kaprekar
 # Importamos la función de parte1.py
 from parte1 import pedirNumeros
 # Importamos la función de parte2.py
