@@ -1,4 +1,6 @@
 # Grupo-L-TT
-#Entorno utilizado: Atom (Linux)
+#Repositorio creador para realizar las tareas correspondientes a Metodología de la Investigación de la universidad UTN Mendoza de la Técnicatura en Programación Superior
 #https://github.com/brunotarditi/Grupo-L-TT
-#Breve ejercicio en Python que consiste en buscar la Constante de Kaprekar 
+#TP3: Máscaras 3D
+#TP4: Idea del proyecto final
+#TP5: Constante de Kaprekar
