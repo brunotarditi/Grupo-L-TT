@@ -1,0 +1,3 @@
+#https://github.com/brunotarditi/Grupo-L-TT
+#Desarrollado en entorno: Atom (Linux)
+#Breve ejercicio que se encarga de buscar la Constante de Kaprekar
