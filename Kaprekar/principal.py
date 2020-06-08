@@ -1,3 +1,4 @@
+#https://github.com/brunotarditi/Grupo-L-TT
 #Programa Constante de Kaprekar
 # Importamos la función de parte1.py
 from parte1 import pedirNumeros
