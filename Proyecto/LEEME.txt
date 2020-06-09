@@ -4,6 +4,7 @@ Integrantes: Tarditi Bruno, Panella Lautaro.
 Nombre del proyecto: "Compra Fácil" 
 Lenguaje seleccionado: Python 3
 Entorno de trabajo: Pycharm IDE
+Gestor de base de datos: SQLite 3
 Descripción: Este proyecto se basa en la creación de una aplicación que sería mayormente utilizada en Smartphones con sistema operativo Android, y también puede tener 
 su versión de escritorio para sistemas Windows y Linux.
 La idea principal es hacer una aplicación que permita confeccionar una lista de compras, buscando entre categorías de muchos productos pre-cargados, y la opción de 
