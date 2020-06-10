@@ -55,7 +55,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=1'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==2):
@@ -64,7 +63,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=2'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==3):
@@ -73,7 +71,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=3'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==4):
@@ -82,7 +79,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=4'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==5):
@@ -91,7 +87,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=5'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==6):
@@ -100,7 +95,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=6'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==7):
@@ -109,7 +103,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=7'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==8):
@@ -118,7 +111,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=8'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==9):
@@ -127,7 +119,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=9'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==10):
@@ -136,7 +127,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=10'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==11):
@@ -145,7 +135,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=11'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==12):
@@ -154,7 +143,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=12'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==13):
@@ -163,7 +151,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=13'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==14):
@@ -172,7 +159,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=14'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==15):
@@ -181,7 +167,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=15'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
         if  (indice==16):
@@ -190,7 +175,6 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=16'
             db_rows = self.run_query(query)
-            #print(indice)
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
 
