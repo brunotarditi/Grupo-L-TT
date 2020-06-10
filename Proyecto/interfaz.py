@@ -46,6 +46,82 @@ class Vista:
         for row in db_rows:
             self.tree.insert('', 0, text=row[0], values=row[1])
 
+    def desplegar(self):
+        fila = self.tree.item(self.tree.selection())['text']
+        indice = int(fila)
+        if  (indice==1):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=1'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==2):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=2'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==3):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=3'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==4):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=4'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==5):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=5'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==6):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=6'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==7):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=7'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if  (indice==8):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=8'
+            db_rows = self.run_query(query)
+            #print(indice)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
 if __name__ == '__main__':
     ventana = Tk()
     app = Vista(ventana)
