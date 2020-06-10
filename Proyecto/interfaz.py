@@ -13,7 +13,7 @@ class Vista:
         frame = LabelFrame(self.vent, text='Lista de productos:')
         frame.grid(row=1, column=0, columnspan=10, pady=40, padx=40)
     
-     # Tabla
+        # Tabla
         self.tree = ttk.Treeview(height=20, column=2)
         self.tree.grid(row=3, column=0)
         self.tree.heading('#0', text='Codigo', anchor=CENTER)
@@ -23,6 +23,10 @@ class Vista:
         self.tree1 = ttk.Treeview(height=20)
         self.tree1.grid(row=3, column=4)
         self.tree1.heading('#0', text='Productos', anchor=CENTER)
+
+        # Botón para desplegar categorias y para agregar productos a la lista del usuario
+        ttk.Button(text='Desplegar', command=self.desplegar).grid(row=5, column=0, sticky=W + E)
+        ttk.Button(text='Agregar').grid(row=5, column=4, sticky=W + E)
 
 if __name__ == '__main__':
     ventana = Tk()
