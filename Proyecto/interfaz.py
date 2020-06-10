@@ -5,7 +5,7 @@ import sqlite3
 class Vista:
     db_name = 'mibase.db'
 
-    def _init_(self, ventana):
+    def __init__(self, ventana):
         self.vent = ventana
         self.vent.title('Compra Fácil')
 
@@ -27,6 +27,8 @@ class Vista:
         # Botón para desplegar categorias y para agregar productos a la lista del usuario
         ttk.Button(text='Desplegar', command=self.desplegar).grid(row=5, column=0, sticky=W + E)
         ttk.Button(text='Agregar').grid(row=5, column=4, sticky=W + E)
+
+        self.get_products()
 
     def run_query(self, query, parameters=()):
         with sqlite3.connect(self.db_name) as conn:
