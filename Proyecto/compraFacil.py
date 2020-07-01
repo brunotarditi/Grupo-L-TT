@@ -280,3 +280,279 @@ class Vista:
             records = self.tree1.get_children()
             for elementos in records:
                 self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=5'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 6.
+        if (indice == 6):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=6'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 7.
+        if (indice == 7):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=7'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 8.
+        if (indice == 8):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=8'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 9.
+        if (indice == 9):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=9'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 10.
+        if (indice == 10):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=10'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 11.
+        if (indice == 11):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=11'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 12.
+        if (indice == 12):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=12'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 13.
+        if (indice == 13):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=13'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 14.
+        if (indice == 14):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=14'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 15.
+        if (indice == 15):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=15'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+        # Si se selcciona la categoría 16.
+        if (indice == 16):
+            # Limpio la lista.
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            # Consulto a la base de datos.
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=16'
+            # Llamo al método.
+            db_rows = self.run_query(query)
+            # Muestro los productos de la categoría.
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+    # Método que envía un producto por defecto a la zona de edición.
+    def agregarProducto(self):
+        # Mensaje saliente en caso de no seleccionar un producto. 
+        self.mensaje['text'] = ''
+        try:
+            self.tree1.item(self.tree1.selection())['text'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        # Envío el producto a la caja de texto.
+        Producto = self.tree1.item(self.tree1.selection())['text']
+        self.nombre.set(Producto)
+
+    # Método que borra productos de mi lista de compras.
+    def borrarProducto(self):
+        # Mensaje saliente en caso de no seleccionar un producto.
+        self.mensaje['text'] = ''
+        try:
+            self.tree2.item(self.tree2.selection())['values'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        Producto = self.tree2.item(self.tree2.selection())['values'][0]
+        # Consulto a la base de datos.
+        query = 'DELETE FROM LISTA WHERE Producto = ?'
+        # Llamo al método.
+        self.run_query(query, (Producto,))
+        # Muestro un mensaje de opeación exitosa.
+        self.mensaje['text'] = 'El producto ha sido eliminado.'
+        # Llamo al método.
+        self.get_productosLista()
+
+    # Método que envía un producto de la lista de compras a la zona de edición.
+    def editarProducto(self):
+        # Mensaje saliente en caso de no seleccionar un producto.
+        self.mensaje['text'] = ''
+        try:
+            self.tree2.item(self.tree2.selection())['values'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        # Envío a la caja de texto el nombre del producto.
+        self.nombre.set(self.tree2.item(self.tree2.selection())['values'][0])
+        # Envío a la caja de texto la marca del producto.
+        self.marca.set(self.tree2.item(self.tree2.selection())['values'][1])
+        # Envío a la caja de texto el precio del producto.
+        self.precio.set(self.tree2.item(self.tree2.selection())['values'][2])
+        # Envío a la caja de texto la cantidad del producto.
+        self.cantidad.set(self.tree2.item(self.tree2.selection())['values'][3])
+
+    # Método que guarda un producto nuevo o lo actualiza en mi lista de compras.
+    def guardarProducto(self):
+        self.mensaje['text'] = ''
+        try:
+            # Llamo al método.
+            self.insertarProducto()
+        except:
+            # Llamo al método.
+            self.actualizarProducto()
+            return
+
+    # Método que actualiza los valores de un producto.
+    def actualizarProducto(self):
+        # Consulto a la base de datos.
+        query = 'UPDATE LISTA SET Producto = ?, Marca = ?, Precio = ?, Cantidad = ? WHERE Producto = ?'
+        parameters = (self.nombre.get(), self.marca.get(), self.precio.get(), self.cantidad.get(), self.nombre.get())
+        # Llamo al método.
+        self.run_query(query, parameters)
+        # Muestro un mensaje de opeación exitosa. 
+        self.mensaje['text'] = 'El producto ha sido actualizado.'
+        # Llamo al método.
+        self.get_productosLista()
+
+    # Método que inserta un nuevo producto.
+    def insertarProducto(self):
+        # Si no se ingresa precio, se cargará 0 por defecto.
+        if (self.precio.get() == ''):
+            self.precio.set(0)
+        # Si no se ingresa cantidad se cargará 1 por defecto.
+        if (self.cantidad.get() == ''):
+            self.cantidad.set(1)
+        # Consulto a la base de datos.
+        query = 'INSERT INTO LISTA VALUES (?, ?, ?, ?)'
+        parameters = (self.nombre.get(), self.marca.get(), self.precio.get(), self.cantidad.get())
+        # Mensaje saliente en caso de no ingresar un nombre para el producto. 
+        if (self.nombre.get() == ''):
+            self.mensaje['text'] = 'Por favor ingrese un nombre para el producto.'
+            self.precio.set('')
+            self.cantidad.set('')
+        # Inserto el producto en mi lista de compras.
+        else:
+            # Consulto a la base de datos.
+            self.run_query(query, parameters)
+            # Muestro un mensaje de opeación exitosa.
+            self.mensaje['text'] = 'El producto ha sido insertado.'
+            # Llamo al método.
+            self.get_productosLista()
+
+    # Método para limpiar las cajas de texto.
+    def borrarCampos(self):
+        # Limpio la caja de texto Nombre.
+        self.nombre.set("")
+        # Limpio la caja de texto Precio.
+        self.precio.set("")
+        # Limpio la caja de texto Marca.
+        self.marca.set("")
+        # Limpio la caja de texto Cantidad.
+        self.cantidad.set("")
+
+# Método para lanzar mi ventana.
+if __name__ == '__main__':
+    ventana = Tk()
+    app = Vista(ventana)
+    ventana.mainloop()
