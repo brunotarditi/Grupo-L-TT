@@ -17,7 +17,7 @@ class Vista:
         self.Producto = ""
 
         # Defino un ícono para la app.
-        self.vent.iconbitmap('compra-facil.ico')
+        #self.vent.iconbitmap('compra-facil.ico')
 
         # Defino un ícono de botón.
         self.imgCancelar = PhotoImage(file=['cancelar.png'])
@@ -41,7 +41,7 @@ class Vista:
         self.nombre = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.nombre)
         # Defino su lugar.
-        entry.place(x=75, y=38)
+        entry.place(x=85, y=42)
 
         # Creo una caja de texto para Precio.
         Label(frame, text='Precio: ').grid(row=2, column=0)
@@ -50,7 +50,7 @@ class Vista:
         self.precio = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.precio)
         # Defino su lugar.
-        entry.place(x=75, y=58)
+        entry.place(x=85, y=62)
 
         # Creo una caja de texto para Marca.
         Label(frame, text='Marca: ').grid(row=1, column=2)
@@ -59,7 +59,7 @@ class Vista:
         self.marca = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.marca)
         # Defino su lugar.
-        entry.place(x=258, y=38)
+        entry.place(x=320, y=41)
 
         # Creo una caja de texto para Cantidad.
         Label(frame, text='Cantidad: ').grid(row=2, column=2)
@@ -68,14 +68,14 @@ class Vista:
         self.cantidad = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.cantidad)
         # Defino su lugar.
-        entry.place(x=258, y=58)
+        entry.place(x=320, y=62)
 
         # Creo una caja de texto para Total.
         Label(self.vent, text='TOTAL : ').grid(row=2, column=2)
         self.total = tk.StringVar()
         entry = ttk.Entry(ventana, textvariable=self.total, state='readonly')
         # Defino su lugar.
-        entry.place(x=935, y=135)
+        entry.place(x=1035, y=139)
 
         # Creo un mensaje saliente para errores y operaciones.
         self.mensaje = Label(text='', fg='red')
