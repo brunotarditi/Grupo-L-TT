@@ -175,3 +175,188 @@ class Vista:
             records = self.tree1.get_children()
             for elementos in records:
                 self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=4'
+            db_rows = self.run_query(query)
+        for row in db_rows:
+            self.tree1.insert('', 0, text=row[0])
+        if (indice == 5):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=5'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 6):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=6'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 7):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=7'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 8):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=8'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 9):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=9'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 10):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=10'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 11):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=11'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 12):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=12'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 13):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=13'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 14):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=14'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 15):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=15'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+        if (indice == 16):
+            records = self.tree1.get_children()
+            for elementos in records:
+                self.tree1.delete(elementos)
+            query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=16'
+            db_rows = self.run_query(query)
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
+
+
+    def agregarProducto(self):
+        self.mensaje['text'] = ''
+        try:
+            self.tree1.item(self.tree1.selection())['text'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        Producto = self.tree1.item(self.tree1.selection())['text']
+        self.nombre.set(Producto)
+
+
+    def borrarProducto(self):
+        self.mensaje['text'] = ''
+        try:
+            self.tree2.item(self.tree2.selection())['values'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        Producto = self.tree2.item(self.tree2.selection())['values'][0]
+        query = 'DELETE FROM LISTA WHERE Producto = ?'
+        self.run_query(query, (Producto,))
+        self.mensaje['text'] = 'El producto ha sido eliminado.'
+        self.get_productosLista()
+
+
+    def editarProducto(self):
+        self.mensaje['text'] = ''
+        try:
+            self.tree2.item(self.tree2.selection())['values'][0]
+        except IndexError as e:
+            self.mensaje['text'] = 'Por favor selecciona un producto.'
+            return
+        self.nombre.set(self.tree2.item(self.tree2.selection())['values'][0])
+        self.marca.set(self.tree2.item(self.tree2.selection())['values'][1])
+        self.precio.set(self.tree2.item(self.tree2.selection())['values'][2])
+        self.cantidad.set(self.tree2.item(self.tree2.selection())['values'][3])
+
+
+    def guardarProducto(self):
+        self.mensaje['text'] = ''
+        try:
+            self.insertarProducto()
+        except:
+            self.actualizarProducto()
+            return
+
+
+    def actualizarProducto(self):
+        query = 'UPDATE LISTA SET Producto = ?, Marca = ?, Precio = ?, Cantidad = ? WHERE Producto = ?'
+        parameters = (self.nombre.get(), self.marca.get(), self.precio.get(), self.cantidad.get(), self.nombre.get())
+        self.run_query(query, parameters)
+        self.mensaje['text'] = 'El producto ha sido actualizado.'
+        self.get_productosLista()
+
+
+    def insertarProducto(self):
+        if (self.precio.get() == ''):
+            self.precio.set(0)
+        if (self.cantidad.get() == ''):
+            self.cantidad.set(1)
+        query = 'INSERT INTO LISTA VALUES (?, ?, ?, ?)'
+        parameters = (self.nombre.get(), self.marca.get(), self.precio.get(), self.cantidad.get())
+        if (self.nombre.get() == ''):
+            self.mensaje['text'] = 'Por favor ingrese un nombre para el producto.'
+            self.precio.set('')
+            self.cantidad.set('')
+        else:
+            self.run_query(query, parameters)
+            self.mensaje['text'] = 'El producto ha sido insertado.'
+            self.get_productosLista()
+
+
+    def borrarCampos(self):
+        self.nombre.set("")
+        self.precio.set("")
+        self.marca.set("")
+        self.cantidad.set("")
+
+
+if __name__ == '__main__':
+    ventana = Tk()
+    app = Vista(ventana)
+    ventana.mainloop()
