@@ -10,7 +10,7 @@ class Vista:
         self.vent = ventana
         self.vent.title('Compra Fácil')
         self.Producto=""
-        #self.vent.iconbitmap('compra-facil-logo.ico')
+        self.vent.iconbitmap('compra-facil.ico')
         self.imgCancelar = PhotoImage(file = ['cancelar.png'])
         self.imgGuardar = PhotoImage(file = ['guardar.png'])
         self.imgEditar = PhotoImage(file = ['editar.png'])
@@ -177,8 +177,8 @@ class Vista:
                 self.tree1.delete(elementos)
             query = 'SELECT Nombre FROM PRODUCTOS WHERE IdCategoria=4'
             db_rows = self.run_query(query)
-        for row in db_rows:
-            self.tree1.insert('', 0, text=row[0])
+            for row in db_rows:
+                self.tree1.insert('', 0, text=row[0])
         if (indice == 5):
             records = self.tree1.get_children()
             for elementos in records:
@@ -276,7 +276,6 @@ class Vista:
             for row in db_rows:
                 self.tree1.insert('', 0, text=row[0])
 
-
     def agregarProducto(self):
         self.mensaje['text'] = ''
         try:
@@ -286,7 +285,6 @@ class Vista:
             return
         Producto = self.tree1.item(self.tree1.selection())['text']
         self.nombre.set(Producto)
-
 
     def borrarProducto(self):
         self.mensaje['text'] = ''
@@ -301,7 +299,6 @@ class Vista:
         self.mensaje['text'] = 'El producto ha sido eliminado.'
         self.get_productosLista()
 
-
     def editarProducto(self):
         self.mensaje['text'] = ''
         try:
@@ -314,7 +311,6 @@ class Vista:
         self.precio.set(self.tree2.item(self.tree2.selection())['values'][2])
         self.cantidad.set(self.tree2.item(self.tree2.selection())['values'][3])
 
-
     def guardarProducto(self):
         self.mensaje['text'] = ''
         try:
@@ -323,14 +319,12 @@ class Vista:
             self.actualizarProducto()
             return
 
-
     def actualizarProducto(self):
         query = 'UPDATE LISTA SET Producto = ?, Marca = ?, Precio = ?, Cantidad = ? WHERE Producto = ?'
         parameters = (self.nombre.get(), self.marca.get(), self.precio.get(), self.cantidad.get(), self.nombre.get())
         self.run_query(query, parameters)
         self.mensaje['text'] = 'El producto ha sido actualizado.'
         self.get_productosLista()
-
 
     def insertarProducto(self):
         if (self.precio.get() == ''):
@@ -348,13 +342,11 @@ class Vista:
             self.mensaje['text'] = 'El producto ha sido insertado.'
             self.get_productosLista()
 
-
     def borrarCampos(self):
         self.nombre.set("")
         self.precio.set("")
         self.marca.set("")
         self.cantidad.set("")
-
 
 if __name__ == '__main__':
     ventana = Tk()
