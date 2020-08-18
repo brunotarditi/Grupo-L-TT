@@ -41,7 +41,8 @@ class Vista:
         self.nombre = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.nombre)
         # Defino su lugar.
-        entry.place(x=85, y=42)
+        entry.place(x=85, y=42) #posición para Linux
+       #entry.place(x=75, y=38) #posicion para Windows
 
         # Creo una caja de texto para Precio.
         Label(frame, text='Precio: ').grid(row=2, column=0)
@@ -50,7 +51,8 @@ class Vista:
         self.precio = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.precio)
         # Defino su lugar.
-        entry.place(x=85, y=62)
+        entry.place(x=85, y=62) #posición para Linux
+       #entry.place(x=75, y=58) #posicion para Windows
 
         # Creo una caja de texto para Marca.
         Label(frame, text='Marca: ').grid(row=1, column=2)
@@ -59,7 +61,8 @@ class Vista:
         self.marca = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.marca)
         # Defino su lugar.
-        entry.place(x=320, y=41)
+        entry.place(x=320, y=41) #posición para Linux
+       #entry.place(x=258, y=38) #posicion para Windows
 
         # Creo una caja de texto para Cantidad.
         Label(frame, text='Cantidad: ').grid(row=2, column=2)
@@ -68,7 +71,8 @@ class Vista:
         self.cantidad = tk.StringVar(frame)
         entry = ttk.Entry(ventana, textvariable=self.cantidad)
         # Defino su lugar.
-        entry.place(x=320, y=62)
+        entry.place(x=320, y=62) #posición para Linux
+       #entry.place(x=258, y=58) #posicion para Windows
 
         # Creo una caja de texto para Total.
         Label(self.vent, text='TOTAL : ').grid(row=2, column=2)
@@ -76,6 +80,7 @@ class Vista:
         entry = ttk.Entry(ventana, textvariable=self.total, state='readonly')
         # Defino su lugar.
         entry.place(x=1035, y=139)
+       #entry.place(x=935, y=135) #posicion para Windows
 
         # Creo un mensaje saliente para errores y operaciones.
         self.mensaje = Label(text='', fg='red')
